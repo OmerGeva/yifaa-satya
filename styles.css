@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: "Rubik", serif;
+}
+
+.primary-background {
+  background-color: #B8EAFF;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  position: relative;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  background: url("https://images.unsplash.com/photo-1621351159305-5a9dc76b2830?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  height: calc(80vh - 240px);
+  width: calc(100vw - 280px);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding: 120px 140px;
+}
+.under-hero {
+  background-color: #87755fd1;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.under-hero p {
+  font-style: italic;
+  font-weight: 800;
+  margin: 6px;
+}
+.smaller {
+  font-size: 1.5rem;
+}
+.hero h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  margin-bottom: 30px;
+  font-family: "Dancing Script", cursive;
+}
+
+.cta-button {
+  background-color: #A2CA71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 400px;
+}
+
+.cta-button:hover {
+  background-color: #8ebf52;
+}
+
+.intro {
+  text-align: center;
+  padding: 50px;
+  background: #F5F3F1;
+  width: calc(100vw-100px);
+  height: 80vh;
+  direction: rtl;
+}
+.intro-card {
+  height: 90%;
+  background-color: white;
+  display: flex;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+}
+
+.intro p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 82px;
+}
+.intro-content p {
+  text-align: right;
+}
+
+.intro-card img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services {
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+  width: calc(100vw-100px);
+  height: 80vh;
+  direction: rtl;
+}
+
+.services-card-back { 
+  height: 90%;
+  width: 100%;
+  background: #F5F3F1;
+}
+.services-card {
+  height: calc(100% - 164px);
+  background: url('./image-asset.png') no-repeat center;
+  background-size: 40%;
+  padding: 82px;
+  width: calc(100% - 164px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.services-card h2 {
+  font-size: 2rem;
+}
+
+.about-satya {
+  text-align: right;
+}
+
+footer {
+  background-color: #87755fd1;
+  height: 20vh;
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    width: 100vw;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    width: 60vw;
+  }
+
+  .under-hero {
+    height: 5vh;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: calc(100vw + 20px);
+  }
+
+  .under-hero .smaller {
+    font-size: 1rem;
+  }
+
+  .intro,
+  .services {
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+  }
+
+  .intro-card,
+  .services-card-back {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-card img,
+  .services-card img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .intro-content,
+  .services-card {
+    width: calc(100% - 40px); 
+    padding: 20px;
+    text-align: center;
+  }
+
+  .intro-content h2,
+  .services-card h2 {
+    font-size: 2em;
+  }
+
+  .intro-content p,
+  .services-card p {
+    font-size: 1em;
+  }
+
+  footer {
+    height: 5vh;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: calc(100vw + 20px);
+  }
+}
